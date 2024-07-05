@@ -1,0 +1,12 @@
+<div class="p-4 bg-white shadow-lg rounded-lg">
+    <div class="flex items-center mb-4">
+      <img [src]="photo" alt="User Photo" class="w-12 h-12 rounded-full object-cover mr-4">
+      <div>
+        <h3 class="text-lg font-bold">{{ username }}</h3>
+        <div class="flex items-center">
+          <span *ngFor="let star of stars" class="text-yellow-500">&#9733;</span>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-600">{{ review }}</p>
+  </div>

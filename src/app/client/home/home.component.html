@@ -1,0 +1,120 @@
+<!-- <div class="w-[100vw]">
+  <div class="w-full h-5 border rounded bg-slate-400" ></div>
+  <app-user-nav></app-user-nav> 
+  <div class="w-[92%] ml-[65px] ">
+  <div class="w-full h-[250px] border rounded bg-slate-400">
+    <img src="assets/wallpaper/wallpaper.jpg" alt="" class="w-full h-[250px]">
+  </div>
+  <div class="w-full mt-[30px]">
+    <h1 class="text-2xl font-bold mb-4">Title of These Cards</h1>
+    <div class="flex flex-row justify-between">
+        <app-card class=""></app-card>
+        <app-card class=""></app-card>
+        <app-card class=""></app-card>
+        <app-card class=""></app-card>
+    </div>
+</div>
+<div class="w-full mt-[30px]">
+  <h1 class="text-2xl font-bold mb-4">Best packages</h1>
+  <div class="flex flex-row justify-between">
+    <app-package-card></app-package-card>
+    <app-package-card></app-package-card>
+    <app-package-card></app-package-card>
+    <app-package-card></app-package-card>
+
+  </div>
+</div>
+</div> 
+</div> -->
+
+
+
+<!-- Header -->
+<app-user-nav></app-user-nav> 
+
+<!-- Hero Image -->
+<section class="bg-cover bg-center h-96 mt-1" style="background-image: url('assets/wallpaper/wallpaper.jpg');">
+  <div class="container mx-auto flex flex-col items-center justify-center h-full text-white">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to SoloMate</h1>
+    <p class="text-xl md:text-2xl mb-8">Find Your Perfect Travel Companion</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Explore Now</button>
+  </div>
+</section>
+
+<!-- Best Locations Section -->
+<section id="locations" class="py-12">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Best Locations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Repeat for each location card -->
+      <app-card class="bg-white shadow-lg rounded overflow-hidden"></app-card>
+      <app-card class="bg-white shadow-lg rounded overflow-hidden"></app-card>
+      <app-card class="bg-white shadow-lg rounded overflow-hidden"></app-card>
+      <app-card class="bg-white shadow-lg rounded overflow-hidden"></app-card>
+    </div>
+  </div>
+</section>
+
+<!-- Best Packages Section -->
+<section id="packages" class="py-12 bg-gray-200">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Best Packages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Repeat for each package card -->
+      <app-package-card class="bg-white shadow-lg rounded overflow-hidden"></app-package-card>
+      <app-package-card class="bg-white shadow-lg rounded overflow-hidden"></app-package-card>
+      <app-package-card class="bg-white shadow-lg rounded overflow-hidden"></app-package-card>
+      <app-package-card class="bg-white shadow-lg rounded overflow-hidden"></app-package-card>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="py-12">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Repeat for each review card -->
+      <app-review-card photo="path/to/photo.jpg" username="John Doe"  review="This was an amazing experience!"></app-review-card>
+      <app-review-card photo="path/to/photo.jpg" username="Jane Smith"  review="I had a great time exploring new places."></app-review-card>
+      <app-review-card photo="path/to/photo.jpg" username="Alice Johnson"  review="Highly recommend this service!"></app-review-card>
+      <app-review-card photo="path/to/photo.jpg" username="Bob Brown"  review="A wonderful way to meet new travel buddies."></app-review-card>
+    </div>
+  </div>
+</section>
+
+<!-- Group Chat Section -->
+<section id="group-chat" class="py-12 bg-gray-200">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Group Chat and Plan Your Trip</h2>
+    <p class="text-gray-600 mb-8">Join group chats with your matched travel companions and start planning your next adventure.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Repeat for each chat group card -->
+      <app-chat-group-card title="Beach Lovers" description="Join this group if you love beach vacations and planning trips to coastal areas."></app-chat-group-card>
+      <app-chat-group-card title="Mountain Hikers" description="This group is for those who enjoy hiking and exploring mountainous regions."></app-chat-group-card>
+      <app-chat-group-card title="City Explorers" description="For travelers who love exploring urban areas and cityscapes."></app-chat-group-card>
+      <app-chat-group-card title="Adventure Seekers" description="If you're into adrenaline-fueled adventures, join this group to plan thrilling trips."></app-chat-group-card>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#640D6B] text-white py-8">
+  <div class="container mx-auto text-center">
+    <div class="flex justify-center space-x-8 mb-4">
+      <a href="#terms" class="hover:text-gray-200">Terms of Service</a>
+      <a href="#privacy" class="hover:text-gray-200">Privacy Policy</a>
+      <a href="#help" class="hover:text-gray-200">Help Center</a>
+    </div>
+    <div class="flex justify-center space-x-4 mb-4">
+      <a href="#facebook" class="hover:text-gray-200"><img src="facebook-icon.png" alt="Facebook" class="h-6 w-6"></a>
+      <a href="#twitter" class="hover:text-gray-200"><img src="twitter-icon.png" alt="Twitter" class="h-6 w-6"></a>
+      <a href="#instagram" class="hover:text-gray-200"><img src="instagram-icon.png" alt="Instagram" class="h-6 w-6"></a>
+    </div>
+    <div>
+      <p>Email: info@solomate.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Travel St, Wanderlust City, Country</p>
+    </div>
+  </div>
+</footer>
