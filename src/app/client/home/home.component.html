@@ -30,16 +30,35 @@
 
 
 <!-- Header -->
-<app-user-nav></app-user-nav> 
+<!-- <app-user-nav class="relative z-20 bg-blue-500"></app-user-nav>  -->
 
 <!-- Hero Image -->
-<section class="bg-cover bg-center h-96 mt-1" style="background-image: url('assets/wallpaper/wallpaper.jpg');">
-  <div class="container mx-auto flex flex-col items-center justify-center h-full text-white">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to SoloMate</h1>
-    <p class="text-xl md:text-2xl mb-8">Find Your Perfect Travel Companion</p>
-    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Explore Now</button>
+<!-- Your main layout HTML -->
+
+<section class="bg-cover bg-center h-[100vh]" style="background-image: url('assets/wallpaper/beach7.jpg');">
+  <app-user-nav></app-user-nav>
+  <div class="w-[1000px] h-[600px] ml-[150px] mt-[120px] flex relative">
+    <div class="container mx-auto flex flex-col h-full text-white">
+      <h1 class="text-8xl md:text-6xl font-bold mb-4">Journey to All World <br> Corners</h1>
+      <p class="text-xl md:text-2xl mb-8">Find Your Perfect Travel Companion</p>
+      <button class="bg-[#25425d] border border-yellow-400 hover:bg-[#0e1a25] text-yellow-400 w-[120px] h-[40px] py-2 rounded">Book a Tour</button>
+    </div>
+    <div class="absolute top-28 left-96">
+      <app-carousel [images]="[
+        'assets/wallpaper/beach7.jpg',
+        'assets/wallpaper/beach8.jpg',
+        'assets/wallpaper/beach9.jpg',
+        'assets/wallpaper/beach10.jpg'
+      ]" [smallImages]="[
+        'assets/wallpaper/small1.jpg',
+        'assets/wallpaper/small2.jpg',
+        'assets/wallpaper/small3.jpg'
+      ]"></app-carousel>
+    </div>
   </div>
 </section>
+
+
 
 <!-- Best Locations Section -->
 <section id="locations" class="py-12">
@@ -75,10 +94,10 @@
     <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Repeat for each review card -->
-      <app-review-card photo="path/to/photo.jpg" username="John Doe"  review="This was an amazing experience!"></app-review-card>
-      <app-review-card photo="path/to/photo.jpg" username="Jane Smith"  review="I had a great time exploring new places."></app-review-card>
-      <app-review-card photo="path/to/photo.jpg" username="Alice Johnson"  review="Highly recommend this service!"></app-review-card>
-      <app-review-card photo="path/to/photo.jpg" username="Bob Brown"  review="A wonderful way to meet new travel buddies."></app-review-card>
+      <app-review-card photo="assets/wallpaper/fayiz.png" username="John Doe"  review="This was an amazing experience!"></app-review-card>
+      <app-review-card photo="assets/wallpaper/fayiz.png" username="Jane Smith"  review="I had a great time exploring new places."></app-review-card>
+      <app-review-card photo="assets/wallpaper/fayiz.png" username="Alice Johnson"  review="Highly recommend this service!"></app-review-card>
+      <app-review-card photo="assets/wallpaper/fayiz.png" username="Bob Brown"  review="A wonderful way to meet new travel buddies."></app-review-card>
     </div>
   </div>
 </section>

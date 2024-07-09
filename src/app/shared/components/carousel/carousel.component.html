@@ -1,0 +1,18 @@
+<!-- carousel.component.html -->
+<div class="w-full h-full relative">
+    <div class="carousel-wrapper flex overflow-x-scroll space-x-4 scrollbar-hide">
+      <div 
+        *ngFor="let image of images; let i = index" 
+        class="carousel-item relative flex-shrink-0 bg-cover bg-center rounded-md transition-transform duration-300" 
+        [ngClass]="{'active': i === activeIndex}" 
+        [style.backgroundImage]="'url(' + image + ')'"
+        [style.width.px]="i === activeIndex ? 300 : 150"
+        [style.height.px]="i === activeIndex ? 200 : 100"
+        (click)="setActiveIndex(i)">
+        <div *ngIf="i === activeIndex" class="small-cards-container absolute inset-0 flex justify-around items-center">
+          <div *ngFor="let smallImage of smallImages" class="small-card w-1/4 h-1/4 bg-cover bg-center rounded-md" [style.backgroundImage]="'url(' + smallImage + ')'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

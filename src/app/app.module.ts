@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './client/home/home.component';
 import { UserNavComponent } from './shared/components/user-nav/user-nav.component';
 import { CardComponent } from './shared/components/card/card.component';
+import { CarouselComponent } from './shared/components/carousel/carousel.component'
 import { PackageCardComponent } from './shared/components/packageCard/package-card.component';
 import { AppChatGroupCardComponent  } from './shared/components/chat-group/chat-group.component';
-import { ReviewCardComponent } from  './shared/components/review-card/review-card.component'
+import { ReviewCardComponent } from  './shared/components/review-card/review-card.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { ReviewCardComponent } from  './shared/components/review-card/review-car
     HomeComponent,
     UserNavComponent,
     CardComponent,
+    CarouselComponent,
     PackageCardComponent,
     AppChatGroupCardComponent,
     ReviewCardComponent, 
